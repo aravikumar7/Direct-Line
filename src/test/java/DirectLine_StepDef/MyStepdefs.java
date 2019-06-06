@@ -2,9 +2,6 @@ package DirectLine_StepDef;
 
 import DirectLine_Pages.BrowserFactory;
 import DirectLine_Pages.DealerPortal;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;

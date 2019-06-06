@@ -39,7 +39,7 @@ public class DealerPortal extends BasePage{
     public WebElement errorEmptyRegNumber;
 
     public Boolean checkURL(){
-        return driver.getTitle().equalsIgnoreCase("https://covercheck.vwfsinsuranceportal.co.uk/");
+        return driver.getCurrentUrl().equalsIgnoreCase("https://covercheck.vwfsinsuranceportal.co.uk/");
     }
     public void checkRegistrationNumber(){
         findVehicle.click();
