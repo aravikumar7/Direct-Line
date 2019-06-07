@@ -25,6 +25,6 @@ public class TestRunner {
 
     @AfterClass
     public static void closeTheBrowser() {
-        driver.close();
+        driver.quit();
     }
     }

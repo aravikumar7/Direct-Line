@@ -25,11 +25,10 @@ public class BrowserFactory {
         }
         else
         {
-            //String browserName = System.getProperty("BROWSER");
-            String browserName = "firefox";
+            String browserName = System.getProperty("BROWSER");
             DesiredCapabilities capabilities;
 
-            /*if (browserName.equalsIgnoreCase("chrome")) {
+            if (browserName.equalsIgnoreCase("chrome")) {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--disable-features=VizDisplayCompositor");
                 capabilities = DesiredCapabilities.chrome();
@@ -40,21 +39,18 @@ public class BrowserFactory {
                 capabilities = DesiredCapabilities.edge();
             } else {
                 capabilities = DesiredCapabilities.chrome();
-            }*/
-            /*try {
+            }
+            try {
                 capabilities.setCapability("InPrivate", "true");
                capabilities.setCapability("platform", "Windows 10");
                 capabilities.setCapability("version","latest");
-                capabilities.setCapability("name", "Add to Basket Feature");
-            //   driver = new RemoteWebDriver(new URL(URL), capabilities);
+                capabilities.setCapability("name", "Direct Line");
+               driver = new RemoteWebDriver(new URL(URL), capabilities);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
                 System.out.println("Cause is : "+e.getCause());
                 System.out.println("Message is :"+e.getMessage());
-            }*/
-     //   System.setProperty("webdriver.chrome.driver", "G:/driver/chromedriver.exe");
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+            }
         return driver;
         }
     }
