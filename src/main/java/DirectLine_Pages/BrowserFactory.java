@@ -13,10 +13,9 @@ import java.net.URL;
 
 public class BrowserFactory {
 
-    static final String USERNAME = "lakshmi.jeevi";
-    static final String ACCESS_KEY = "1d4ba44b-6087-4d74-adb9-92607120875e";
+    static final String USERNAME = "id";
+    static final String ACCESS_KEY = "access_key";
     static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.eu-central-1.saucelabs.com/wd/hub";
-
     static WebDriver driver = null;
 
     public static WebDriver getBrowser() {
