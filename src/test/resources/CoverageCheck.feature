@@ -1,5 +1,5 @@
-@CoverCheck
-Feature: To check if Coverage is valid or not
+@VehicleCheck
+Feature: To check if a Vehicle exists or not
 
   @Functional
   Scenario Outline: Check Vehicle with valid cover
