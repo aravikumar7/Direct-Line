@@ -1,9 +1,11 @@
 @VehicleCheck
 Feature: To check if a Vehicle exists or not
 
-  @Functional
-  Scenario Outline: Check Vehicle with valid cover
+  Background: User is in Insurance Portal
     Given User is in Insurance Portal
+
+
+  Scenario Outline: Check Vehicle with valid cover
     When the user enters "<registration>" and tries to Find vehicle
     Then Results show the result for "<registration>"
     And Cover end is greater than current date and time
@@ -13,9 +15,8 @@ Feature: To check if a Vehicle exists or not
       | registration |
       | OV12UYY |
 
-  @Functional
+
   Scenario Outline: Check Vehicle with invalid cover
-    Given User is in Insurance Portal
     When the user enters "<registration>" and tries to Find vehicle
     Then Results show no coverage
 
@@ -23,8 +24,7 @@ Feature: To check if a Vehicle exists or not
       | registration |
       | OV12UYX |
 
-  @Functional
+
   Scenario: Check Vehicle insurance without entering Registration number
-    Given User is in Insurance Portal
     When the user tries to Find vehicle without entering registration number
     Then error message "Please enter a valid car registration" should be displayed
