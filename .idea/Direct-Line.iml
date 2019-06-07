@@ -47,12 +47,6 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.3" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:4.2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-server:3.141.59" level="project" />
-    <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
-    <orderEntry type="library" name="Maven: net.jcip:jcip-annotations:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:jetty-repacked:9.4.12.v20180830" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:4.2.6" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:cucumber-html:0.2.7" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:gherkin:5.1.0" level="project" />
